@@ -6,6 +6,11 @@
   "scripts": {
     "test": "echo Node `node -v`; echo NPM `npm -v`; echo Mocha `mocha --version`; mocha --recursive -R spec -s 500 test"
   },
+  "homepage": "https://github.com/TomFrost/node-vitalsigns",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TomFrost/node-vitalsigns.git"
+  },
   "keywords": [
     "health",
     "check",
