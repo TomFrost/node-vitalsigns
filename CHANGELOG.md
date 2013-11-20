@@ -7,6 +7,7 @@ Powerful and customizable application health monitoring
 - README clarifications
 - Feature: Allow 'report' to link to a static value so that non-namespaced
 keys can be attached to a report
+- Feature: Allow constraints to be built around non-namespaced keys
 - Fixed: Error in express endpoint when accessing the unhealthy HTTP code.
 - Fixed: uptime monitor was not in the index
 
