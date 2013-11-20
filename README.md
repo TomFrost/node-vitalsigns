@@ -78,7 +78,7 @@ of Monitors" section below for more details.
 
 Monitors are registered with:
 
-**instance.monitor(<monitor>, [options])**
+**instance.monitor({string|object|function} monitor, [{object} options])**
 
 Options are optional.  If specified, they should be a Javascript object of
 key/value pairs specific to the monitor being loaded.  In addition, a *name*
@@ -267,4 +267,4 @@ Monitors application uptime.  Provides fields:
 VitalSigns is distributed under the MIT license.
 
 ## Credits
-Attempt was created by Tom Frost at Leadnomics in 2013.
+VitalSigns was created by Tom Frost at Leadnomics in 2013.
