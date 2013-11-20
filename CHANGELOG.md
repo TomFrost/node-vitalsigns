@@ -3,6 +3,9 @@ Powerful and customizable application health monitoring
 
 ##ChangeLog
 
+### v0.2.2
+- Fixed: Reports overwrite function values in monitors
+
 ### v0.2.1
 - Fixed: Eliminate missing repository warning from NPM
 
