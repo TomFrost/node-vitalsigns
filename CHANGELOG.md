@@ -3,6 +3,9 @@ Powerful and customizable application health monitoring
 
 ##ChangeLog
 
+### v0.2.1
+- Fixed: Eliminate missing repository warning from NPM
+
 ### v0.2.0
 - README clarifications
 - Feature: Allow 'report' to link to a static value so that non-namespaced
