@@ -1,0 +1,24 @@
+{
+  "name": "vitalsigns",
+  "version": "0.1.0",
+  "description": "Powerful and customizable application health monitoring",
+  "main": "lib/VitalSigns.js",
+  "scripts": {
+    "test": "echo Node `node -v`; echo NPM `npm -v`; echo Mocha `mocha --version`; mocha --recursive -R spec -s 500 test"
+  },
+  "keywords": [
+    "health",
+    "check",
+    "monitor",
+    "express",
+    "cpu",
+    "memory",
+    "application"
+  ],
+  "author": "Tom Frost <tom@frosteddesign.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "should": "~2.1.0"
+  }
+}
