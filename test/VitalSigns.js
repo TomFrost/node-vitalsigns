@@ -176,7 +176,7 @@ describe("VitalSigns", function() {
 					code.should.be.type('number');
 					done();
 				}
-			}
+			};
 			inst.express({}, mockResponse);
 		});
 		it('should have hapi route handler that responds with json report', function(done) {
@@ -187,8 +187,8 @@ describe("VitalSigns", function() {
 						code.should.be.type('number');
 						done();
 					}
-				}
-			}
+				};
+			};
 			inst.hapi({}, mockReply);
 		});
 	});
