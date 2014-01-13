@@ -125,6 +125,14 @@ respectively.  It will also provide the full health report returned by
 
 	app.get('/ping', instance.express);
 
+#### hapi
+A function to be passed to Hapi as the handler for a route.  This function
+will return HTTP 200 or 503 by default to represent healthy and unhealthy,
+respectively.  It will also provide the full health report returned by
+`getReport()` as a JSON string with *Content-type: application/json*.  Example:
+
+	server.route({method: 'GET', path: '/ping', handler: instance.hapi});
+
 #### {array} getFailed()
 Returns an array of strings describing the constraints that failed the last
 time `isHealthy()` was called.  Array will be empty if the instance was
