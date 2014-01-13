@@ -122,7 +122,7 @@ describe("VitalSigns", function() {
 	});
 	describe("Events", function() {
 		before(function() {
-			inst = new VitalSigns()
+			inst = new VitalSigns();
 			inst.monitor(sampleMon);
 			inst.unhealthyWhen('hello', 'world').equals(0);
 		});
@@ -163,6 +163,33 @@ describe("VitalSigns", function() {
 			});
 			sampleData.world = 5;
 			inst.isHealthy().should.be.true;
+		});
+	});
+	describe('Utilities', function() {
+		before(function() {
+			inst = new VitalSigns();
+		});
+		it('should have express middleware that responds with json report', function(done) {
+			var mockResponse = {
+				json: function(body, code) {
+					body.should.have.property('healthy');
+					code.should.be.type('number');
+					done();
+				}
+			}
+			inst.express({}, mockResponse);
+		});
+		it('should have hapi route handler that responds with json report', function(done) {
+			var mockReply = function(body) {
+				body.should.have.property('healthy');
+				return {
+					code: function(code) {
+						code.should.be.type('number');
+						done();
+					}
+				}
+			}
+			inst.hapi({}, mockReply);
 		});
 	});
 });
