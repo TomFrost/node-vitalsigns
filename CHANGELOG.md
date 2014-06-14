@@ -3,6 +3,10 @@ Powerful and customizable application health monitoring
 
 ##ChangeLog
 
+### v0.3.0
+- Added: Hapi route handler, alongside the existing express option. Credits
+to [mrlannigan](https://github.com/mrlannigan).
+
 ### v0.2.2
 - Fixed: Reports overwrite function values in monitors
 
