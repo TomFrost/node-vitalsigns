@@ -85,6 +85,24 @@ describe("VitalSigns", function() {
 			report.default.should.have.property('hello');
 			report.default.hello.should.eql('world');
 		});
+		it('should return flattened reports', function() {
+			inst = new VitalSigns();
+			inst.monitor({
+				foo: 'bar'
+			});
+			var report = inst.getReport({flatten: true});
+			report.should.have.property('default.foo').equal('bar');
+			report.should.have.property('healthy').equal(true);
+		});
+		it('should return custom flattened reports', function() {
+			inst = new VitalSigns();
+			inst.monitor({
+				foo: 'bar'
+			});
+			var report = inst.getReport({flatten: true, separator: '_'});
+			report.should.have.property('default_foo').equal('bar');
+			report.should.have.property('healthy').equal(true);
+		});
 	});
 	describe("Constraints", function() {
 		afterEach(function() {

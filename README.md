@@ -138,12 +138,39 @@ Returns an array of strings describing the constraints that failed the last
 time `isHealthy()` was called.  Array will be empty if the instance was
 healthy as of the last check.
 
-#### {object} getReport()
+#### {object} getReport(options)
 Returns a Javascript object with the health report: each monitor name as keys,
 with the value being another Javascript object mapping each monitor's fields to
 their values.  This function also attaches a 'healthy' field at the root level
 with a boolean true or false representing whether the instance is healthy based
 on this report.
+
+Sample report:
+
+	{
+		cpu: {
+			usage: 50,
+			loadAvg1: 0.09,
+			loadAvg5: 0.80,
+			loadAvg15: 1.29
+		},
+		healthy: true
+	}
+
+##### {boolean} options.flatten (default: false)
+Set to true to flatten the report object to a single level of keys by
+concatenating nested key names.  Example:
+
+	{
+		"cpu.usage": 50,
+		"cpu.loadAvg1": 0.09,
+		"cpu.loadAvg5": 0.80,
+		"cpu.loadAvg15": 1.29,
+		"healthy": true
+	}
+
+##### {string} options.separator (default: ".")
+If flatten is true, this is the string used to separate joined key names. 
 
 #### {boolean} isHealthy()
 Returns true or false based on whether the instance is healthy.  Also fires up

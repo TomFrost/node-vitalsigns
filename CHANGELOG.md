@@ -5,6 +5,7 @@ Powerful and customizable application health monitoring
 
 ### Development HEAD
 - Added: JSDoc on all functions in the core
+- Added: Ability to get flattened reports
 
 ### v0.3.0
 - Added: Hapi route handler, alongside the existing express option. Credits
