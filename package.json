@@ -1,6 +1,6 @@
 {
   "name": "vitalsigns",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Powerful and customizable application health monitoring",
   "main": "lib/VitalSigns.js",
   "scripts": {

@@ -3,7 +3,7 @@ Powerful and customizable application health monitoring
 
 ##ChangeLog
 
-### Development HEAD
+### v0.4.0
 - Added: JSDoc on all functions in the core
 - Added: Ability to get flattened reports
 
