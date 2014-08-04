@@ -3,6 +3,9 @@ Powerful and customizable application health monitoring
 
 ##ChangeLog
 
+### Development HEAD
+- Added: JSDoc on all functions in the core
+
 ### v0.3.0
 - Added: Hapi route handler, alongside the existing express option. Credits
 to [mrlannigan](https://github.com/mrlannigan).
