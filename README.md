@@ -1,4 +1,4 @@
-# VitalSigns
+# VitalSigns [![Build Status](https://travis-ci.org/TomFrost/node-vitalsigns.svg?branch=master)](https://travis-ci.org/TomFrost/node-vitalsigns)
 Powerful and customizable application health monitoring
 
 Sponsored by [Leadnomics](http://www.leadnomics.com).
