@@ -3,7 +3,7 @@ Powerful and customizable application health monitoring
 
 ##ChangeLog
 
-### Development HEAD
+### v0.4.1
 - Fixed: Calling getReport() no longer generates a second report to run the
 health check
 - Fixed: Various documentation improvements, especially for IDEs that enforce
