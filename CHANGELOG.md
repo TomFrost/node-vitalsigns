@@ -3,6 +3,9 @@ Powerful and customizable application health monitoring
 
 ##ChangeLog
 
+### Development HEAD
+- Added: Travis CI integration
+
 ### v0.4.1
 - Fixed: Calling getReport() no longer generates a second report to run the
 health check
