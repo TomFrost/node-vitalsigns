@@ -5,7 +5,9 @@ Powerful and customizable application health monitoring
 
 ### Development HEAD
 - Fixed: Calling getReport() no longer generates a second report to run the
-health check.
+health check
+- Fixed: Various documentation improvements, especially for IDEs that enforce
+JSDoc declared types
 
 ### v0.4.0
 - Added: JSDoc on all functions in the core
