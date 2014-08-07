@@ -5,6 +5,9 @@ Powerful and customizable application health monitoring
 
 ### Development HEAD
 - Added: Travis CI integration
+- Fixed: Express endpoint now sends (statusCode, body) instead of
+(body, statusCode). This avoids a warning in Express 4.x, and is
+backward-compatible. 
 
 ### v0.4.1
 - Fixed: Calling getReport() no longer generates a second report to run the

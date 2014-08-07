@@ -189,7 +189,7 @@ describe("VitalSigns", function() {
 		});
 		it('should have express middleware that responds with json report', function(done) {
 			var mockResponse = {
-				json: function(body, code) {
+				json: function(code, body) {
 					body.should.have.property('healthy');
 					code.should.be.type('number');
 					done();
