@@ -3,6 +3,10 @@ Powerful and customizable application health monitoring
 
 ##ChangeLog
 
+### Development HEAD
+- Fixed: Calling getReport() no longer generates a second report to run the
+health check.
+
 ### v0.4.0
 - Added: JSDoc on all functions in the core
 - Added: Ability to get flattened reports
