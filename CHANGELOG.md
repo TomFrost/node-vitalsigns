@@ -3,6 +3,9 @@ Powerful and customizable application health monitoring
 
 ##ChangeLog
 
+### Development HEAD
+- Added: Support for Express 4
+
 ### v0.4.2
 - Added: Travis CI integration
 - Fixed: Express endpoint now sends (statusCode, body) instead of
