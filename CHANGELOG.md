@@ -3,8 +3,8 @@ Powerful and customizable application health monitoring
 
 ##ChangeLog
 
-### Development HEAD
-- Added: Support for Express 4
+### v0.4.3
+- Fixed: Support the official Express 4 API
 
 ### v0.4.2
 - Added: Travis CI integration
